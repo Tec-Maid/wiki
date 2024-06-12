@@ -1,14 +1,10 @@
 # CustomPreviewWindow (CPW)
 
-<div align="center">
+<div align="center" style="margin-bottom: 50px">
 
-<img  width=40% src="../Global_Images/Scyana.png">
-<br>
-<img  width=40% src="../Global_Images/TecMaid.png">
+<img  width=60% src="./Images/CPW.png">
 
 </div>
-
-
 
 Thank you for choosing the “CustomPreviewWindow” from TecMaid. This documentation contains everything you need to know to get started. If you have any questions, encounter a problem, or need help with integration, please do not hesitate to contact us at service@tecmaid.com.
 
@@ -35,7 +31,7 @@ This tool is ideal for visualizing gameobjects, textures, materials, meshes and 
 
 You can edit the visual settings of the CustomPreviewWindow using the included “CustomPreviewStyles.uss” file and editing the classes which are defined within.
 
-<div style="text-align:center;">
+<div align="center">
 
 ![Settings](Images/Settings.png)
 
@@ -82,9 +78,13 @@ It mentions the following topics:
 
 **Method 1:** To do this, go to Window => UI Toolkit => UI Builder. This will open the UI Builder window where you can create and edit UI elements.
 
+<div align="center">
+
 IMAGE+++++
 
 IMAGE+++++
+
+</div>
 
 
 **Method 2:** In the Project window, right-click in the Assets folder or any subfolder where you want to create the UI Document.
@@ -92,21 +92,33 @@ Select Create => UI Toolkit => UI Document.
 A new UI Document (UXML) will be created. Rename it to something you like.
 Double-Click on your created file and the UI-Builder Window should open.
 
+<div align="center">
+
 IMAGE+++++
 
 IMAGE+++++
+
+</div>
 
 
 2. In the UI Builder, go to the "Library" panel, then select the "Project" tab. Navigate to:
 “Custom Controls (C#)” => “TecMaid_CustomPreviewWindow” => “CustomPreviewWindow”
 
+<div align="center">
+
 IMAGE+++++
+
+</div>
 
 
 3. How to Use in Project: 
 CPW can be used like any other UI Builder Standard component. Drop "CustomPreviewWindow" script into your UXML project to add it.
 
+<div align="center">
+
 IMAGE+++++
+
+</div>
 
 
 4. To add styles to CPW components:
@@ -118,17 +130,24 @@ Copy the content from the imported "CustomPreviewStyles.uss" into your own .USS 
 - Select “CustomPreviewStyles.uss”.
 - This will import the stylesheet, allowing you to customize the CPW components.
 
+<div align="center">
 
 IMAGE+++++
 
 IMAGE+++++
+
+</div>
 
 
 ## Examples (Demo)
 
+<div align="center">
+
 ![Demo 1](./Images/Examples_1.png)
 
 ![Demo 2](./Images/Examples_2.png)
+
+</div>
 
 ## Troubleshooting
 
