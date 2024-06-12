@@ -143,8 +143,6 @@ Copy the content from the imported "CustomPreviewStyles.uss" into your own .USS 
 
 </div>
 
-## Troubleshooting
-
 
 ## Useful Links
 
@@ -155,10 +153,3 @@ Copy the content from the imported "CustomPreviewStyles.uss" into your own .USS 
 - [Unity Docs: UIBuilder](https://docs.unity3d.com/Manual/UIBuilder.html)
 - [Unity Docs: UIE-custom-controls](https://docs.unity3d.com/Manual/UIE-custom-controls.html)
 - [Unity Technologies Git Repository](https://github.com/Unity-Technologies/ui-toolkit-manual-code-examples/tree/master)
-
-
-
-
-
-
-
