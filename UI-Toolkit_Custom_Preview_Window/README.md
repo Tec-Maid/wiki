@@ -1,6 +1,6 @@
 # CustomPreviewWindow (CPW)
 
-<div style=" width:100% text-align: center; margin-bottom: 50px">
+<div align="center">
 
 <img  width=40% src="../Global_Images/Scyana.png">
 <br>
