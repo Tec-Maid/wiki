@@ -1,8 +1,8 @@
 # CustomPreviewWindow (CPW)
 
-<div align="center" style="margin-bottom: 50px">
+<div align="center">
 
-<img  width=60% src="./Images/CPW.png">
+<img  width=60% src="./Images/CPW.png" alt="CPW Image">
 
 </div>
 
@@ -80,9 +80,7 @@ It mentions the following topics:
 
 <div align="center">
 
-IMAGE+++++
-
-IMAGE+++++
+![Usage Methode 1](./Images/Usage_1.png)
 
 </div>
 
@@ -94,9 +92,7 @@ Double-Click on your created file and the UI-Builder Window should open.
 
 <div align="center">
 
-IMAGE+++++
-
-IMAGE+++++
+![Usage Methode 2](./Images/Usage_2.png)
 
 </div>
 
@@ -106,7 +102,7 @@ IMAGE+++++
 
 <div align="center">
 
-IMAGE+++++
+![Style Components](./Images/Usage_3.png)
 
 </div>
 
@@ -116,7 +112,7 @@ CPW can be used like any other UI Builder Standard component. Drop "CustomPrevie
 
 <div align="center">
 
-IMAGE+++++
+![Style Components](./Images/Usage_4.png)
 
 </div>
 
@@ -132,9 +128,7 @@ Copy the content from the imported "CustomPreviewStyles.uss" into your own .USS 
 
 <div align="center">
 
-IMAGE+++++
-
-IMAGE+++++
+![Style Components](./Images/Usage_5.png)
 
 </div>
 
