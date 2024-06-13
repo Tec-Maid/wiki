@@ -11,13 +11,12 @@ Thank you for choosing the “CustomPreviewWindow” from TecMaid. This document
 ## Table of Contents
 
 - CustomPreviewWindow (CPW)
-    - Introduction
-    - Settings
-    - Installation Instruction
-    - How to use
-    - Examples (Demo)
-    - Troubleshooting
-    - Useful Links
+    - [Introduction](#introduction)
+    - [Settings](#settings)
+    - [Installation Instruction](#installation-instructions)
+    - [How to use](#how-to-use)
+    - [Examples (Demo)](#examples-demo)
+    - [Useful Links](#useful-links)
 
 
 ## Introduction
