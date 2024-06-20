@@ -115,6 +115,22 @@ CPW can be used like any other UI Builder Standard component. Drop "CustomPrevie
 
 </div>
 
+4. To add styles to CPW components:
+
+* Copy the content from the imported " CustomPreviewStyles.uss" into your own 
+.USS file to edit the CPW part.
+
+* In the UI Builder, go to the “StyleSheets” panel.
+
+* Click the “+” button and select “Add Existing USS”.
+
+* In the new window that opens, navigate to:
+Assets\TecMaid\CustomPreviewWindow\Scripts\Styles\CustomPreviewStyles.uss
+
+* Select “CustomPreviewStyles.uss”.
+
+* This will import the stylesheet, allowing you to customize the CPW components
+
 
 <div align="center">
 
@@ -149,12 +165,14 @@ namespace TecMaid_CustomPreviewWindow
         [SerializeField] private VisualTreeAsset _tree;// UI Document, UXML
         private ObjectField objField;//Local ObjectField
         private CustomPreviewWindow cpw;
+
         [MenuItem("Tools/DemoUMXL")]
         public static void ShowEditor()
         {
             var window = GetWindow<DemoWindow>();
             window.titleContent = new GUIContent("DemoUMXL");
         }
+
         private void CreateGUI()
         {
             _tree.CloneTree(rootVisualElement);
@@ -162,12 +180,14 @@ namespace TecMaid_CustomPreviewWindow
             InitFields();
             ExternalObjectField();
         }
+
         void InitFields()
         {
             //Initialising Local Components here:
             //Initialising CPW Components
             cpw.InitializeCPWComponents(rootVisualElement);
         }
+
         void ExternalObjectField()
         {
             //Setting Local ObjectField value to external CPW ObjectField value
