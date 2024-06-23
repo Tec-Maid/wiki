@@ -115,21 +115,91 @@ CPW can be used like any other UI Builder Standard component. Drop "CustomPrevie
 
 </div>
 
-
 4. To add styles to CPW components:
-Copy the content from the imported "CustomPreviewStyles.uss" into your own .USS file to edit the CPW part.
-- In the UI Builder, go to the “StyleSheets” panel.
-- Click the “+” button and select “Add Existing USS”.
-- In the new window that opens, navigate to:
-- Assets\TecMaid\CustomPreviewWindow\Scripts\Styles\CustomPreviewStyles.uss
-- Select “CustomPreviewStyles.uss”.
-- This will import the stylesheet, allowing you to customize the CPW components.
+
+* Copy the content from the imported " CustomPreviewStyles.uss" into your own 
+.USS file to edit the CPW part.
+
+* In the UI Builder, go to the “StyleSheets” panel.
+
+* Click the “+” button and select “Add Existing USS”.
+
+* In the new window that opens, navigate to:
+Assets\TecMaid\CustomPreviewWindow\Scripts\Styles\CustomPreviewStyles.uss
+
+* Select “CustomPreviewStyles.uss”.
+
+* This will import the stylesheet, allowing you to customize the CPW components
+
 
 <div align="center">
 
 ![Style Components](./Images/Usage_5.png)
 
 </div>
+
+5. To add CPW to your editor Script:
+
+* Create a new C# script by pressing right click in the Unity explorer then navigating
+to “create” => “C# Script” or “Monobehaviour Script”.
+
+* Open your newly created script and change the inherited class from 
+"Monobehaviour" to "EditorWindow"
+
+* Add the TecMaid CPW namespace by adding 
+“using.TecMaid_CustomPreviewWindow” to your namespaces at the top of the 
+script.
+
+* Create a private field of class "CustomPreviewWindow". For example: private 
+CustomPreviewWindow cpw;
+
+* Create a function() that initializes cpw, give it the "rootVisualELement" parameter, 
+and call it inside the Unity Editor function CreateGUI(). For example
+
+
+```cs
+namespace TecMaid_CustomPreviewWindow
+{
+    public class DemoWindow : EditorWindow
+    {
+        [SerializeField] private VisualTreeAsset _tree;// UI Document, UXML
+        private ObjectField objField;//Local ObjectField
+        private CustomPreviewWindow cpw;
+
+        [MenuItem("Tools/DemoUMXL")]
+        public static void ShowEditor()
+        {
+            var window = GetWindow<DemoWindow>();
+            window.titleContent = new GUIContent("DemoUMXL");
+        }
+
+        private void CreateGUI()
+        {
+            _tree.CloneTree(rootVisualElement);
+            cpw = new CustomPreviewWindow();
+            InitFields();
+            ExternalObjectField();
+        }
+
+        void InitFields()
+        {
+            //Initialising Local Components here:
+            //Initialising CPW Components
+            cpw.InitializeCPWComponents(rootVisualElement);
+        }
+
+        void ExternalObjectField()
+        {
+            //Setting Local ObjectField value to external CPW ObjectField value
+            objField.RegisterValueChangedCallback(evt =>
+            {
+                cpw.SetCPWObjectField(evt.newValue);
+            });
+        }
+    }
+}
+
+```
 
 
 ## Examples (Demo)
