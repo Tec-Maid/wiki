@@ -14,6 +14,8 @@ Thank you for choosing the “CustomPreviewWindow” from TecMaid. This document
     - [Introduction](#introduction)
     - [Settings](#settings)
     - [Installation Instruction](#installation-instructions)
+    - [Technical details](#technical-details)
+    - [Requirements](#requirements)
     - [How to use](#how-to-use)
     - [Examples (Demo)](#examples-demo)
     - [Useful Links](#useful-links)
@@ -59,6 +61,19 @@ Here's a brief example of how to import "CustomPreviewWindow" into your Project:
     - Check the Assets folder in the Project window to ensure that the CustomPreviewWindow files are present.
     - You can now start using “CustomPreviewWindow” Demo via the Tools menu: Tools => DemoUXML.
     - By following these steps and the following “How to use” instructions, you can easily install and start using CustomPreviewWindow in your projects.
+
+
+## Technical details
+CPW supports the following major Unity versions:
+- 2021.3+
+- 2022
+- 2023
+- Unity 6
+
+## Requirements
+Visual Scripting (Unity Package, installed by default from version 2021.1)
+Works with UI Toolkit (formerly known as UIElements) only, it's not compatible with Unity UI (UGUI).
+Note: that Unity versions lower than 2021.1 are not supported, as those versions do not come with UI Builder built-in.
 
 ## How to use
 
