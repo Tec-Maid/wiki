@@ -167,7 +167,7 @@ see the eƯects of the changes:
   * **Turn Slowdown** – slowing down for sharp turns.
 * **Separation (local avoidance)**
   * Enable to reduce crowding/clipping with other **FlyingAgents**.
-  * **Separation Radius / Strength / Fallof** - tune to change the feel.
+  * **Separation Radius / Strength / Falloff** - tune to change the feel.
   * **Agent Margin** - personal buƯer for each agent.
   * **Max Separation Speed** - caps avoidance nudge per second.
 
