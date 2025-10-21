@@ -50,9 +50,9 @@ not hesitate to contact us at service@tecmaid.com
 For the quick start/setup, only these components on GameObjects will be required. No
 code changes in a script.
 
-<div align="center" style="background:#ffffff;">
+<div align="center">
 
-![Structure](Images/Structure.png)
+![Structure](Images/PathfindingDiagramLight.png)
 
 </div>
 
