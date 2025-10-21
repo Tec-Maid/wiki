@@ -59,6 +59,9 @@ code changes in a script.
 ## Quick Start (5 minutes)
 A quick guide to set up an existing scene with a single Flying agent and a target to move to. 
 
+> [!IMPORTANT]
+> First, install the package through Unity’s package manager. When using a Unity Engine Version below 2023.3 (LTS), make sure to close the project and restart it for the Burst package update to take effect 
+
 1) **Create the Navigation system**
 * In the **Hierarchy**, create an empty GameObject called **Navigation**.
 * Add the **NavigationVolume** and **PathingManager** script components.
@@ -326,7 +329,8 @@ The only thing required for the Pathfinding Tool to work are:
 * Raise Max Batch Size moderately.
 * Increase Repath Interval on FlyingAgent.
 * Switch to Polyline smoothing for extreme cases.
-> <span style="color:orange;"> WARNING: Turn off all path Visualizations as they require heavy CPU loads!<span/>
+> [!WARNING]  
+> Turn off all path Visualizations as they require heavy CPU loads!
 
 ## Working with Multiple Agents and Obstacles
 * Add **FlyingAgent** to each character - local avoidance keeps spacing.
